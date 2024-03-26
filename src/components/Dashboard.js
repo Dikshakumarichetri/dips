@@ -3,15 +3,18 @@ import Sidebar from './Sidebar';
 import TopBar from './TopBar'; // Import your TopBar component
 import TopNotificationBar from './Notification';
 import Card from './Card';
+import LineChart from './Chart';
 
 function Dashboard() {
   return (
     <div style={{ display: 'flex', flexDirection: 'row' }}>
       <Sidebar />
       <div style={{ flexGrow: 1, display: 'flex', flexDirection: 'column',marginLeft:"260px" }}>
-        <TopBar />  {/* Place TopBar here */}
+        <TopBar />  
 <TopNotificationBar />   
-<Card />   </div>
+<Card />   
+ <LineChart/> 
+</div>
     </div>
   );
 }
